@@ -1,0 +1,15 @@
+git --version -> to see the installed git version
+
+Global Configuration
+git config --global user.name 'Ayan'
+git confif --global user.email 'ayan@gmail.com'
+
+git config --list -> To view git global configuration
+
+git help <verb> or git <verb> --help -> manual for the specified verb
+
+git init -> Initialize empty git repo in the local repo 
+
+git status -> Displays status of all the project files i.e. staged or not staged
+
+.gitignore file is used to exclude certain files that we don't want to be tracked.
