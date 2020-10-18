@@ -2,7 +2,7 @@ git --version -> to see the installed git version
 
 Global Configuration
 git config --global user.name 'Ayan'
-git confif --global user.email 'ayan@gmail.com'
+git config --global user.email 'ayan@gmail.com'
 
 git config --list -> To view git global configuration
 
@@ -13,3 +13,34 @@ git init -> Initialize empty git repo in the local repo
 git status -> Displays status of all the project files i.e. staged or not staged
 
 .gitignore file is used to exclude certain files that we don't want to be tracked.
+
+git add -A - to put all file to the staging area.
+git add <filename> - to put specific file to the staging area.
+
+git reset <filename> - to put back specific file to the unstaged area.
+git reset - to put all the files back to unstaged area.
+
+git log - View the commit history.
+
+git clone <remote url> <directory path> - clone a remote repo to a specific directory
+
+git remote -v & git branch -a -> to view information about remote repository.
+
+git diff - displays the changes made to the codebase.
+
+git pull <remote repo> <branch name> - Pull the changes made to the remote repo for the given branch 
+git push <remote repo> <branch name> - Push the changes made to the remote repo for the given branch
+git push -u <remote repo> <branch name> - Does the same as previous command bt the -u flag sets an association with of the local branch with the remote branch. So, in future if we do git push or git pull on a specific branch without mentioning it, it will push to or pull from the associated branch.
+
+git branch <branch name> - creates a new branch 
+git branch - displays all the local branch
+
+git checkout <branch name> -  Switch to a new branch
+git checkout -b <branch name> - Create and switch to a new branch
+
+git branch --merged - displays all the branches that are merged.
+
+git merge <branch name> - Merge the branch to the current active branch
+
+git branch -d <branch name> - Delete a local branch
+git push origin --delete <branch name> - Delete a branch from remote repository
